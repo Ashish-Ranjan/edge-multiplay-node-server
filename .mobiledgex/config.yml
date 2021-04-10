@@ -5,11 +5,11 @@ app:
   appName: EdgeMultiplay
   # Your mobiledgex developer organization.
   developerOrg: MobiledgeX-Samples
-  # The image path of your application in mobiledgex docker registry.
-  # Syntax : docker.mobiledgex.net/YourDeveloperOrg/images/YourAppName
+  # The image path of your application in mobiledgex docker registry (ALL LOWER CASE).
+  # Syntax : docker.mobiledgex.net/yourdeveloperorg/images/yourappname
   # Ex. docker.mobiledgex.net/venkydev/images/github-deploy
   imagePath: docker.mobiledgex.net/mobiledgex-samples/images/edge-multiplay
-  # the image type FKJNDFKJASDNKJNKJAS
+  # the image type, 1 for docker
   imageType: 1
   # docker or kubernetes
   deploymentType: docker
@@ -20,7 +20,7 @@ app:
   flavorName: m4.small
   # Your application ports.
   # Syntax: protocol:port-number
-  # Ex. "tcp:3000, udp:5000".
+  # Ex. "tcp:3000,udp:5000".
   accessPorts: "tcp:3000,udp:5000"
   # Your cluster instance name.
   # A cluster instance represents a collection of compute resources for deploying your application instance.
