@@ -1,0 +1,35 @@
+app:
+  # EU or US or JP
+  region: EU 
+  # Your mobiledgex application name.
+  appName: EdgeMultiplay
+  # Your mobiledgex developer organization.
+  developerOrg: MobiledgeX-Samples
+  # The image path of your application in mobiledgex docker registry.
+  # Syntax : docker.mobiledgex.net/YourDeveloperOrg/images/YourAppName
+  # Ex. docker.mobiledgex.net/venkydev/images/github-deploy
+  imagePath: docker.mobiledgex.net/mobiledgex-samples/images/edge-multiplay
+  # the image type FKJNDFKJASDNKJNKJAS
+  imageType: 1
+  # docker or kubernetes
+  deploymentType: docker
+  # Flavor name, flavors  define varying resource configurations.
+  # for full list of flavor https://console.mobiledgex.net/#/site4/pg=Flavors .
+  # Make sure that the flavor name is supported in the region selected.
+  # For more info, check https://developers.mobiledgex.com/deployments/deployment-workflow/flavors .
+  flavorName: m4.small
+  # Your application ports.
+  # Syntax: protocol:port-number
+  # Ex. "tcp:3000, udp:5000".
+  accessPorts: "tcp:3000,udp:5000"
+  # Your cluster instance name.
+  # A cluster instance represents a collection of compute resources for deploying your application instance.
+  # for more info, check https://developers.mobiledgex.com/deployments/deployment-workflow/clusters.
+  clusterName: autoclusteredgemultiplay
+  # The name of the cloudlet where your app instance will be deployed.
+  # To see all available cloudlets, check https://console.mobiledgex.net/#/site4/pg=Cloudlets.
+  # For more info about cloudlets, check https://developers.mobiledgex.com/deployments/deployment-workflow/cloudlets.
+  cloudletName: frankfurt-main
+  # The name of the operator organization used for the deployment
+  # Ex. TDG
+  operatorOrg: TDG
